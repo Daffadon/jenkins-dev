@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
 WORKDIR /app
-
+RUN apk install git
 RUN git clone -b main https://github.com/Daffadon/jenkins-dev.git .  
 RUN npm ci
 
