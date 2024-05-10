@@ -5,7 +5,7 @@ RUN apk add git
 RUN git clone -b main https://github.com/Daffadon/jenkins-dev.git .  
 RUN npm ci
 
-RUN npm build
+RUN npm run build
 
 # Start the Next.js application
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
