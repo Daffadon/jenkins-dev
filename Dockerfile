@@ -1,7 +1,7 @@
-FROM node:14-alpine
+FROM node:20-alpine3
 
 WORKDIR /app
-RUN apk install git
+RUN apk add git
 RUN git clone -b main https://github.com/Daffadon/jenkins-dev.git .  
 RUN npm ci
 
