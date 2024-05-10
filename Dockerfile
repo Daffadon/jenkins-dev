@@ -1,12 +1,9 @@
 FROM node:14-alpine
 
-# Set the working directory
 WORKDIR /app
 
-COPY package.json ./
+RUN git clone -b main https://github.com/Daffadon/jenkins-dev.git .  
 RUN npm ci
-
-COPY . .
 
 RUN npm build
 
