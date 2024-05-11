@@ -1,7 +1,7 @@
 node {
   stage('Checkout') {
     // Checkout code from GitHub repository
-    git 'https://github.com/daffadon/jenkins-dev'
+    sh 'git clone https://github.com/daffadon/jenkins-dev'
   }
 
   stage('Build') {
