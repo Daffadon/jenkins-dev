@@ -10,6 +10,7 @@ node {
     dir('jenkins-dev'){
       sh 'ls -al'
       sh 'cat app/page.tsx'
+      echo "Success"
     }
   }
 
