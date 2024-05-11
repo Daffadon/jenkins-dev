@@ -9,6 +9,7 @@ node {
     // ...
     dir('jenkins-dev'){
       sh 'ls -al'
+      sh 'cat Jenkinsfile'
     }
   }
 
