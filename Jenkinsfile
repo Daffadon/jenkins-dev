@@ -1,13 +1,15 @@
 node {
   stage('Checkout') {
     // Checkout code from GitHub repository
-    git 'https://github.com/your-username/your-repo.git'
+    git 'https://github.com/daffadon/jenkins-dev'
   }
 
   stage('Build') {
     // Perform build steps here
     // ...
-    sh 'npm install'
+    dir('jenkins-dev'){
+      sh 'npm install'
+    }
   }
 
   stage('Test') {
