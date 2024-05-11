@@ -8,7 +8,7 @@ node {
     // Perform build steps here
     // ...
     dir('jenkins-dev'){
-      sh 'npm install'
+      sh 'npm ci'
     }
   }
 
